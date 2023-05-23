@@ -1,0 +1,18 @@
+<div class="container">
+  Check more example of
+  <a
+    href="https://furetechnews.com/how-to-create-an-angular-table-in-angular-1314/"
+    target="_blank"
+  >
+    Angular camera tutorial
+  </a>
+  on
+  <a href="https://furetechnews.com/" target="_blank"> furetechnews.com </a>
+</div>
+
+<br />
+<app-camera (getPicture)="handleImage($event)"></app-camera>
+
+<div class="webcam-image" *ngIf="webcamImage">
+  <img [src]="webcamImage.imageAsDataUrl" />
+</div>
